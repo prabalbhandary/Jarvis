@@ -130,7 +130,7 @@ function takeCommand(message) {
   } else if (
     message.includes("open calculator") ||
     message.includes("calculator open") ||
-    message.includes("Calculator")
+    message.includes("calculator")
   ) {
     window.open("Calculator:///");
     const finalText = "Opening Calculator sir";
