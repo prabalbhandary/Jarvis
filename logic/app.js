@@ -217,7 +217,12 @@ function takeCommand(message) {
     window.open("https://www.messenger.com", "_blank");
     const finalText = "Opening Facebook Messenger Sir...";
     speak(finalText);
-  } else {
+  }
+  else if(message.includes("who created you") || message.includes("who invented you")){
+    const finalText = "I was created by Prabal Bhandary, sir....."
+    speak(finalText)
+  } 
+  else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
