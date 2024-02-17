@@ -141,7 +141,11 @@ function takeCommand(message) {
   ) {
     const finalText = "Goodbye Sir. Have a nice day sir";
     speak(finalText);
-  } else if (message.includes("open hdhub") || message.includes("hdhub open") || message.includes("hdhub")) {
+  } else if (
+    message.includes("open hdhub") ||
+    message.includes("hdhub open") ||
+    message.includes("hdhub")
+  ) {
     window.open("https://hdhub4u.re/", "_blank");
     const finalText = "Opening Hd hub sir...";
     speak(finalText);
