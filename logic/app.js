@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
   speak("Please wait till I connected to your system sir...");
   speak("I am online now sir...");
   wishMe();
-  speak("I'm your Virtual Assistant. How may I help you sir?");
+  speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
 });
 
 const SpeechRecognition =
