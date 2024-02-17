@@ -57,7 +57,11 @@ function takeCommand(message) {
     message.includes("hey jarvis") ||
     message.includes("hello jarvis") ||
     message.includes("hi jarvis") ||
-    message.includes("hola jarvis")
+    message.includes("hola jarvis") ||
+    message.includes("hey") ||
+    message.includes("hi") ||
+    message.includes("hello") ||
+    message.includes("hola")
   ) {
     speak("Hello Sir, How May I Help You?");
   } else if (message.includes("how are you")) {
