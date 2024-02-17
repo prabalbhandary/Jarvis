@@ -127,7 +127,11 @@ function takeCommand(message) {
     });
     const finalText = date;
     speak(finalText + "sir");
-  } else if (message.includes("open calculator") || (message.includes("calculator open")) || (message.includes("Calculator"))) {
+  } else if (
+    message.includes("open calculator") ||
+    message.includes("calculator open") ||
+    message.includes("Calculator")
+  ) {
     window.open("Calculator:///");
     const finalText = "Opening Calculator sir";
     speak(finalText);
@@ -174,18 +178,26 @@ function takeCommand(message) {
   ) {
     const finalText = "i can help you with your system sir.....";
     speak(finalText);
-  } 
-  else if (message.includes("open chess")|| message.includes("chess open") || message.includes("chess")){
-    window.open("https://www.chess.com", "_blank")
-    const finalText = "Opening chess game sir..."
-    speak(finalText)
-  }
-  else if(message.includes("open insta") || message.includes("open instagram") || message.includes("insta open") || message.includes("instagram open") || message.includes("insta") || message.includes("instagram")){
-    window.open("https://www.instagram.com", "_blank")
-    const finalText = "Opening Instagram Sir..."
-    speak(finalText)
-  }
-  else {
+  } else if (
+    message.includes("open chess") ||
+    message.includes("chess open") ||
+    message.includes("chess")
+  ) {
+    window.open("https://www.chess.com", "_blank");
+    const finalText = "Opening chess game sir...";
+    speak(finalText);
+  } else if (
+    message.includes("open insta") ||
+    message.includes("open instagram") ||
+    message.includes("insta open") ||
+    message.includes("instagram open") ||
+    message.includes("insta") ||
+    message.includes("instagram")
+  ) {
+    window.open("https://www.instagram.com", "_blank");
+    const finalText = "Opening Instagram Sir...";
+    speak(finalText);
+  } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
