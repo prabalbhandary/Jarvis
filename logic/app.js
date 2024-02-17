@@ -136,7 +136,7 @@ function takeCommand(message) {
     const finalText = "Opening Calculator sir";
     speak(finalText);
   } else if (
-    message.includes("shutdown yourself") ||
+    message.includes("shutdown") ||
     message.includes("please shut down yourself")
   ) {
     const finalText = "Goodbye Sir. Have a nice day sir";
