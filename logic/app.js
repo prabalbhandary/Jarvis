@@ -180,6 +180,11 @@ function takeCommand(message) {
     const finalText = "Opening chess game sir..."
     speak(finalText)
   }
+  else if(message.includes("open insta") || message.includes("open instagram") || message.includes("insta open") || message.includes("instagram open") || message.includes("insta") || message.includes("instagram")){
+    window.open("https://www.instagram.com", "_blank")
+    const finalText = "Opening Instagram Sir..."
+    speak(finalText)
+  }
   else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
