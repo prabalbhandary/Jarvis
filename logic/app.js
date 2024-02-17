@@ -209,6 +209,14 @@ function takeCommand(message) {
     window.open("https://chat.openai.com/", "_blank");
     const finalText = "Opening chat GPT sir...";
     speak(finalText);
+  } else if (
+    message.includes("open message") ||
+    message.includes("message open") ||
+    message.includes("message")
+  ) {
+    window.open("https://www.messenger.com", "_blank");
+    const finalText = "Opening Facebook Messenger Sir...";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
