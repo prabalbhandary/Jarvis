@@ -197,7 +197,13 @@ function takeCommand(message) {
     window.open("https://www.instagram.com", "_blank");
     const finalText = "Opening Instagram Sir...";
     speak(finalText);
-  } else {
+  }
+  else if(message.includes("open chat") || message.includes("chat open") || message.includes("chat")){
+    window.open("https://chat.openai.com/", "_blank")
+    const finalText = "Opening chat GPT sir..."
+    speak(finalText)
+  }
+   else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
