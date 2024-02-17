@@ -219,7 +219,7 @@ function takeCommand(message) {
     speak(finalText);
   }
   else if(message.includes("who created you") || message.includes("who invented you")){
-    const finalText = "I was created by Prabal Bhandary, sir....."
+    const finalText = "I was created by Prabal Bhandary sir....."
     speak(finalText)
   } 
   else {
