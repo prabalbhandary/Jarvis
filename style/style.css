@@ -30,9 +30,9 @@
 }
 
 .main .image-container .image img {
-  width: 100%; /* Make the image responsive */
-  max-width: 350px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
 .main .image-container h1 {
@@ -54,11 +54,11 @@
 
 .main .input {
   display: flex;
-  flex-direction: column; /* Adjust layout for small screens */
+  flex-direction: column;
   align-items: center;
-  width: 80vw; /* Adjust width for small screens */
-  max-width: 400px; /* Set a maximum width for larger screens */
-  margin-top: 20px; /* Add space between image and input on small screens */
+  width: 80vw;
+  max-width: 400px;
+  margin-top: 20px;
 }
 
 .main .input .talk {
@@ -82,17 +82,16 @@
 .main .input .content {
   color: #aed0d0;
   font-size: 15px;
-  margin-top: 10px; /* Add space between button and text on small screens */
-  text-align: center; /* Center text on small screens */
+  margin-top: 10px;
+  text-align: center;
 }
 
-/* Media query for small screens */
 @media screen and (max-width: 600px) {
   .main .image-container {
-    text-align: center; /* Center text on small screens */
+    text-align: center;
   }
 
   .main .image-container h1 {
-    font-size: 30px; /* Adjust font size for small screens */
+    font-size: 30px;
   }
 }
