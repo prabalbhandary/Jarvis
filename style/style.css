@@ -30,10 +30,10 @@
 }
 
 .main .image-container .image img {
-  width: 350px;
-  align-items: center;
+  width: 100%; /* Make the image responsive */
+  max-width: 350px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
 }
-
 
 .main .image-container h1 {
   color: #00bcd4;
@@ -47,18 +47,18 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.input{
+
+.input {
   cursor: pointer;
 }
 
 .main .input {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Adjust layout for small screens */
   align-items: center;
-  width: 40vw;
-  height: 50px;
-  border-radius: 20px;
-  background: rgb(202 253 255 / 50%);
+  width: 80vw; /* Adjust width for small screens */
+  max-width: 400px; /* Set a maximum width for larger screens */
+  margin-top: 20px; /* Add space between image and input on small screens */
 }
 
 .main .input .talk {
@@ -82,5 +82,17 @@
 .main .input .content {
   color: #aed0d0;
   font-size: 15px;
-  margin-right: 20px;
+  margin-top: 10px; /* Add space between button and text on small screens */
+  text-align: center; /* Center text on small screens */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .main .image-container {
+    text-align: center; /* Center text on small screens */
+  }
+
+  .main .image-container h1 {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
 }
