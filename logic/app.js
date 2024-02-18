@@ -266,6 +266,14 @@ function takeCommand(message) {
     window.open("https://www.youtube.com/watch?v=iZCGIoReI2k", "_blank");
     const finalText = "Playing Songs sir....";
     speak(finalText);
+  } else if (
+    message.includes("open class") ||
+    message.includes("class open") ||
+    message.includes("class")
+  ) {
+    window.open("https://meet.google.com/pbd-agts-ojz", "_blank");
+    const finalText = "Opening Your Google Class sir";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
