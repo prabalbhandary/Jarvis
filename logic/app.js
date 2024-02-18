@@ -257,6 +257,15 @@ function takeCommand(message) {
     window.open("https://www.vscode.dev/", "_blank");
     const finalText = "Opening Visual Studio Code in web sir...";
     speak(finalText);
+  } else if (
+    message.includes("play some music") ||
+    message.includes("play music") ||
+    message.includes("play") ||
+    message.includes("music")
+  ) {
+    window.open("https://www.youtube.com/watch?v=iZCGIoReI2k", "_blank");
+    const finalText = "Playing Songs sir....";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
