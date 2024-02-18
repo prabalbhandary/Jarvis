@@ -227,6 +227,14 @@ function takeCommand(message) {
   ) {
     const finalText = "I was created by Prabal Bhandary sir.....";
     speak(finalText);
+  } else if (
+    message.includes("open maps") ||
+    message.includes("maps open") ||
+    message.includes("maps")
+  ) {
+    window.open("https://www.google.com/maps/", "_blank");
+    const finalText = "Opening Google Maps sir...";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
