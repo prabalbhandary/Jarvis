@@ -148,7 +148,8 @@ function takeCommand(message) {
   } else if (
     message.includes("open hdhub") ||
     message.includes("hdhub open") ||
-    message.includes("hdhub")
+    message.includes("hdhub") ||
+    message.includes("hd")
   ) {
     window.open("https://hdhub4u.re/", "_blank");
     const finalText = "Opening Hd hub sir...";
