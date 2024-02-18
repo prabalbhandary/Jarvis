@@ -235,6 +235,18 @@ function takeCommand(message) {
     window.open("https://www.google.com/maps/", "_blank");
     const finalText = "Opening Google Maps sir...";
     speak(finalText);
+  } else if (
+    message.includes("my home") ||
+    message.includes("home") ||
+    message.includes("mero ghar") ||
+    message.includes("ghar")
+  ) {
+    window.open(
+      "https://www.google.com/maps/place/Bhadrabas,+44600/@27.7384559,85.412296,15z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b4447a7a573:0xc15e0af90d111b51!8m2!3d27.7366495!4d85.4233708!16s%2Fm%2F04jm3rq?entry=ttu",
+      "_blank"
+    );
+    const finalText = "Opening your home in Google Maps sir";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
