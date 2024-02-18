@@ -248,6 +248,15 @@ function takeCommand(message) {
     );
     const finalText = "Opening your home in Google Maps sir";
     speak(finalText);
+  } else if (
+    message.includes("open code") ||
+    message.includes("code open") ||
+    message.includes("vs code") ||
+    message.includes("code")
+  ) {
+    window.open("https://www.vscode.dev/", "_blank");
+    const finalText = "Opening Visual Studio Code in web sir...";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
