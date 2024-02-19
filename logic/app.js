@@ -274,6 +274,15 @@ function takeCommand(message) {
     window.open("https://meet.google.com/pbd-agts-ojz", "_blank");
     const finalText = "Opening Your Google Class sir";
     speak(finalText);
+  } else if (
+    message.includes("open schoolworkspro") ||
+    message.includes("schoolworkspro open") ||
+    message.includes("schoolworkspro") ||
+    message.includes("school")
+  ) {
+    window.open("https://schoolworkspro.com/", "_blank");
+    const finalText = "Opening School Works Pro sir...";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
