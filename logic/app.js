@@ -283,13 +283,16 @@ function takeCommand(message) {
     window.open("https://schoolworkspro.com/", "_blank");
     const finalText = "Opening School Works Pro sir...";
     speak(finalText);
-  }
-  else if(message.includes("open twitter")|| message.includes("twitter open")|| message.includes("twitter") || message.includes("x")){
-    window.open("https://x.com/", "_blank")
-    const finalText = "Opening Twitter Sir..."
-    speak(finalText)
-  }
-  else {
+  } else if (
+    message.includes("open twitter") ||
+    message.includes("twitter open") ||
+    message.includes("twitter") ||
+    message.includes("x")
+  ) {
+    window.open("https://x.com/", "_blank");
+    const finalText = "Opening Twitter Sir...";
+    speak(finalText);
+  } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
