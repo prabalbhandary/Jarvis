@@ -246,7 +246,7 @@ function takeCommand(message) {
       "https://www.google.com/maps/place/Bhadrabas,+44600/@27.7384559,85.412296,15z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b4447a7a573:0xc15e0af90d111b51!8m2!3d27.7366495!4d85.4233708!16s%2Fm%2F04jm3rq?entry=ttu",
       "_blank"
     );
-    const finalText = "Opening your home in Google Maps sir";
+    const finalText = "Opening your home in Google Maps sir...";
     speak(finalText);
   } else if (
     message.includes("open code") ||
@@ -272,7 +272,7 @@ function takeCommand(message) {
     message.includes("class")
   ) {
     window.open("https://meet.google.com/pbd-agts-ojz", "_blank");
-    const finalText = "Opening Your Google Class sir";
+    const finalText = "Opening Your Google Class sir...";
     speak(finalText);
   } else if (
     message.includes("open schoolworkspro") ||
@@ -283,7 +283,13 @@ function takeCommand(message) {
     window.open("https://schoolworkspro.com/", "_blank");
     const finalText = "Opening School Works Pro sir...";
     speak(finalText);
-  } else {
+  }
+  else if(message.includes("open twitter")|| message.includes("twitter open")|| message.includes("twitter") || message.includes("x")){
+    window.open("https://x.com/", "_blank")
+    const finalText = "Opening Twitter Sir..."
+    speak(finalText)
+  }
+  else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
