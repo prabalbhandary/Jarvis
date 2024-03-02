@@ -35,6 +35,8 @@ window.addEventListener("load", () => {
   speak("Initializing JARVIS sir...");
   speak("Checking your system sir...");
   speak("Please wait till I connect to your system sir...");
+  speak("I will run smoothly on your device sir....");
+  speak("You have the recommended system requirements to run me on your system sir...")
   speak("I am online now sir...");
   wishMe();
   speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
