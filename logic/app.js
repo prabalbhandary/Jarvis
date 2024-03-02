@@ -29,6 +29,7 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
+  wishMe();
   speak("Initializing JARVIS sir...");
   speak("Checking your system sir...");
   speak("Please wait till I connect to your system sir...");
@@ -38,7 +39,6 @@ window.addEventListener("load", () => {
   );
   speak("I am online now sir...");
   speak("You can ask me anything sir...")
-  wishMe();
   speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
 });
 
