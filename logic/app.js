@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
     "You have the recommended system requirements to run me on your system sir..."
   );
   speak("I am online now sir...");
-  speak("You can ask me anything sir...")
+  speak("You can ask me anything sir...");
   speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
 });
 
@@ -302,8 +302,9 @@ function takeCommand(message) {
   } else if (
     message.includes("open steamunlocked") ||
     message.includes("steamunlocked open") ||
-    message.includes("steamunlocked")||
-    message.includes("steam unlocked")
+    message.includes("steamunlocked") ||
+    message.includes("steam unlocked") ||
+    message.includes("steam on locked")
   ) {
     window.open("https://steamunlocked.net/", "_blank");
     const finalText = "Opening Steam Unlocked Sir...";
