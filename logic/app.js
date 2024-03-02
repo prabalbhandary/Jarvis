@@ -301,7 +301,8 @@ function takeCommand(message) {
   } else if (
     message.includes("open steamunlocked") ||
     message.includes("steamunlocked open") ||
-    message.includes("steamunlocked")
+    message.includes("steamunlocked")||
+    message.includes("steam unlocked")
   ) {
     window.open("https://steamunlocked.net/", "_blank");
     const finalText = "Opening Steam Unlocked Sir...";
