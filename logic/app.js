@@ -20,16 +20,17 @@ function wishMe() {
   } else if (hour >= 12 && hour < 17) {
     speak("Good Afternoon Sir...");
   } else if (hour >= 17 && hour < 19) {
-    speak("Good Evenining Sir...");
+    speak("Good Evening Sir...");
   } else {
     speak("Good night Sir");
   }
 }
 
+
 window.addEventListener("load", () => {
-  speak("Initializing JARVIS sir..");
+  speak("Initializing JARVIS sir...");
   speak("Checking your system sir...");
-  speak("Please wait till I connected to your system sir...");
+  speak("Please wait till I connect to your system sir...");
   speak("I am online now sir...");
   wishMe();
   speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
