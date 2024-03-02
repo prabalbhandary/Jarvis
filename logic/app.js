@@ -298,6 +298,14 @@ function takeCommand(message) {
     window.open("https://x.com/", "_blank");
     const finalText = "Opening Twitter Sir...";
     speak(finalText);
+  } else if (
+    message.includes("open steamunlocked") ||
+    message.includes("steamunlocked open") ||
+    message.includes("steamunlocked")
+  ) {
+    window.open("https://steamunlocked.net/", "_blank");
+    const finalText = "Opening Steam Unlocked Sir...";
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
