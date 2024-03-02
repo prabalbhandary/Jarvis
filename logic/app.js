@@ -37,6 +37,7 @@ window.addEventListener("load", () => {
     "You have the recommended system requirements to run me on your system sir..."
   );
   speak("I am online now sir...");
+  speak("You can ask me anything sir...")
   wishMe();
   speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
 });
