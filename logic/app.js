@@ -64,12 +64,17 @@ btn.addEventListener("click", () => {
 });
 
 function takeCommand(message) {
-  if(message.includes("Wake up Jarvis") || message.includes("Wake up") || message.includes("Jarvis Wake up") || message.includes("Wake Jarvis") || message.includes("Wake")){
+  if (
+    message.includes("Wake up Jarvis") ||
+    message.includes("Wake up") ||
+    message.includes("Jarvis Wake up") ||
+    message.includes("Wake Jarvis") ||
+    message.includes("Wake")
+  ) {
     const finalText = "Hello sir, I am already wakeup...";
     speak(finalText);
     wishMe();
-  }
-  else if (
+  } else if (
     message.includes("hey jarvis") ||
     message.includes("hello jarvis") ||
     message.includes("hi jarvis") ||
@@ -97,7 +102,7 @@ function takeCommand(message) {
     message.includes("youtube")
   ) {
     window.open("https://youtube.com", "_blank");
-    const finalText = "Opening Youtube sir..."
+    const finalText = "Opening Youtube sir...";
     speak(finalText);
   } else if (
     message.includes("open facebook") ||
