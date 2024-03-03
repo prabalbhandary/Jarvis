@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
   speak("I am online now sir...");
   speak("You can ask me anything sir...");
   speak(
-    "If I failed to answer your question I would redirect you to web pages like Google and Wikipedia with your question, sir..."
+    "If I failed to answer your question I would redirect you to web pages like Google and Wikipedia with your questions, sir..."
   );
   speak("Don't worry about your questions, sir...");
 });
