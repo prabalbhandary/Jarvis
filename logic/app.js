@@ -65,11 +65,11 @@ btn.addEventListener("click", () => {
 
 function takeCommand(message) {
   if (
-    message.includes("Wake up Jarvis") ||
-    message.includes("Wake up") ||
-    message.includes("Jarvis Wake up") ||
-    message.includes("Wake Jarvis") ||
-    message.includes("Wake")
+    message.includes("wake up jarvis") ||
+    message.includes("wake up") ||
+    message.includes("jarvis wake up") ||
+    message.includes("wake jarvis") ||
+    message.includes("wake")
   ) {
     const finalText = "Hello sir, I am already wakeup, sir...";
     speak(finalText);
