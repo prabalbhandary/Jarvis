@@ -37,9 +37,13 @@ window.addEventListener("load", () => {
   speak(
     "You have the recommended system requirements to run me on your system sir..."
   );
+  speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
   speak("I am online now sir...");
   speak("You can ask me anything sir...");
-  speak("I'm your Virtual Assistant, JARVIS sir. How may I help you sir?");
+  speak(
+    "If I failed to answer your question I would redirect you to web pages like Google and Wikipedia with your question, sir..."
+  );
+  speak("Don't worry about your questions, sir...");
 });
 
 const SpeechRecognition =
