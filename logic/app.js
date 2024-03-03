@@ -71,7 +71,7 @@ function takeCommand(message) {
     message.includes("Wake Jarvis") ||
     message.includes("Wake")
   ) {
-    const finalText = "Hello sir, I am already wakeup...";
+    const finalText = "Hello sir, I am already wakeup, sir...";
     speak(finalText);
     wishMe();
   } else if (
