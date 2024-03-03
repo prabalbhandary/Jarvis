@@ -309,6 +309,23 @@ function takeCommand(message) {
     window.open("https://steamunlocked.net/", "_blank");
     const finalText = "Opening Steam Unlocked Sir...";
     speak(finalText);
+  } else if (
+    message.includes("what day is today") ||
+    message.includes("today") ||
+    message.includes("day")
+  ) {
+    const daysOfWeek = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    const today = new Date().getDay();
+    const finalText = `Today is ${daysOfWeek[today]}, sir.`;
+    speak(finalText);
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
