@@ -29,6 +29,7 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
+  
   wishMe();
   speak("Initializing JARVIS sir...");
   speak("Checking your system sir...");
