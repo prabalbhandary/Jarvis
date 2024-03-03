@@ -64,7 +64,12 @@ btn.addEventListener("click", () => {
 });
 
 function takeCommand(message) {
-  if (
+  if(message.includes("Wake up Jarvis") || message.includes("Wake up") || message.includes("Jarvis Wake up") || message.includes("Wake Jarvis") || message.includes("Wake")){
+    const finalText = "Hello sir, I am already wakeup...";
+    speak(finalText);
+    wishMe();
+  }
+  else if (
     message.includes("hey jarvis") ||
     message.includes("hello jarvis") ||
     message.includes("hi jarvis") ||
@@ -74,7 +79,8 @@ function takeCommand(message) {
     message.includes("hello") ||
     message.includes("hola")
   ) {
-    speak("Hello Sir, How May I Help You?");
+    const finalText = "Hello Sir, How May I Help You?";
+    speak(finalText);
   } else if (message.includes("how are you")) {
     speak("I am good sir. How about you sir?");
   } else if (
@@ -83,28 +89,32 @@ function takeCommand(message) {
     message.includes("google")
   ) {
     window.open("https://google.com", "_blank");
-    speak("Opening Google sir...");
+    const finalText = "Opening Google sir...";
+    speak(finalText);
   } else if (
     message.includes("open youtube") ||
     message.includes("youtube open") ||
     message.includes("youtube")
   ) {
     window.open("https://youtube.com", "_blank");
-    speak("Opening Youtube sir...");
+    const finalText = "Opening Youtube sir..."
+    speak(finalText);
   } else if (
     message.includes("open facebook") ||
     message.includes("facebook open") ||
     message.includes("facebook")
   ) {
     window.open("https://facebook.com", "_blank");
-    speak("Opening Facebook sir...");
+    const finalText = "Opening Facebook sir...";
+    speak(finalText);
   } else if (
     message.includes("open gmail") ||
     message.includes("gmail open") ||
     message.includes("gmail")
   ) {
     window.open("https://www.gmail.com", "_blank");
-    speak("Opening Gmail sir....");
+    const finalText = "Opening Gmail sir....";
+    speak(finalText);
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
