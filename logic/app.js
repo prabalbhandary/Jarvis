@@ -74,7 +74,12 @@ function takeCommand(message) {
     const finalText = "Hello sir, I am already wakeup, sir...";
     speak(finalText);
     wishMe();
-  } else if (
+  } 
+  else if(message.includes("jarvis")){
+    const finalText = "Hi Sir, How may I help you sir?"
+    speak(finalText)
+  }
+  else if (
     message.includes("hey jarvis") ||
     message.includes("hello jarvis") ||
     message.includes("hi jarvis") ||
@@ -84,7 +89,7 @@ function takeCommand(message) {
     message.includes("hello") ||
     message.includes("hola")
   ) {
-    const finalText = "Hello Sir, How May I Help You?";
+    const finalText = "Hello Sir, How May I Help You sir?";
     speak(finalText);
   } else if (message.includes("how are you")) {
     speak("I am good sir. How about you sir?");
