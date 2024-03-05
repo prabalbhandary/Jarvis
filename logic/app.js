@@ -196,9 +196,6 @@ function takeCommand(message) {
     const finalText =
       "Opening your blog repository on your git hub profile sir...";
     speak(finalText);
-  } else if (message.includes("cricket today")) {
-    const finalText = "Nepal won by nine wickets against the Netherlands sir";
-    speak(finalText);
   } else if (
     message.includes("open linkedin") ||
     message.includes("linkedin open") ||
