@@ -207,14 +207,14 @@ function takeCommand(message) {
     window.open("https://www.linkedin.com/", "_blank");
     const finalText = "Opening Linkedin sir...";
     speak(finalText);
-  } else if (message.includes("i am fine jarvis")) {
+  } else if (message.includes("am fine") || message.includes("fine")) {
     const finalText = "That's Great to hear sir";
     speak(finalText);
   } else if (
     message.includes("how can you help me jarvis") ||
     message.includes("how can you help")
   ) {
-    const finalText = "i can help you with your system sir.....";
+    const finalText = "I can help you with your system sir.....";
     speak(finalText);
   } else if (
     message.includes("open chess") ||
