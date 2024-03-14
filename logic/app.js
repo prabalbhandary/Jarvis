@@ -297,7 +297,7 @@ function takeCommand(message) {
     message.includes("class open") ||
     message.includes("class")
   ) {
-    window.open("https://meet.google.com/pbd-agts-ojz", "_blank");
+    window.open("https://meet.google.com/ccz-coim-aez", "_blank");
     const finalText = "Opening Your Google Class sir...";
     speak(finalText);
   } else if (
