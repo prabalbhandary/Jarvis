@@ -345,7 +345,19 @@ function takeCommand(message) {
     const today = new Date().getDay();
     const finalText = `Today is ${daysOfWeek[today]}, sir.`;
     speak(finalText);
-  } else {
+  } 
+  else if (
+    message.includes("download cv") ||
+    message.includes("download resume") ||
+    message.includes("cv download") ||
+    message.includes("resume download")
+  ) {
+    const finalText = "Opening your CV to download sir...";
+    speak(finalText);
+    window.open("https://app.sajilocv.com/cv-builder", "_blank");
+  }
+  
+  else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
